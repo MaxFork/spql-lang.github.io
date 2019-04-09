@@ -33,6 +33,10 @@ console.log( tokenizer("{}") );
 - keyword (if else for while do func switch class break continue case default return try catch) : key
 - operator (+ - * / \= % & | ! ? : < > ~ @ ^ `) : pnc
 
+## Sample code
+
+Click [here](https://github.com/spql-lang/examples) to see sample code written in this language.
+
 ----------
 
 For more details see [SPQL repository](https://github.com/spql-lang/spql).
