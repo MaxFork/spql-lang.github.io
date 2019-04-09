@@ -1,6 +1,8 @@
 ## Welcome to website of the SPQL programming language
 
-### Getting start
+Currently it's has only **tokenizer**.
+
+### Getting Start
 
 ```js
 tokenizer("<input>")
