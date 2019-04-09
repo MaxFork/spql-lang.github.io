@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## Welcome to website of the SPQL programming language
 
-You can use the [editor on GitHub](https://github.com/spql-lang/spql-lang.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Getting start
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```js
+tokenizer("<input>")
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```js
+console.log( tokenizer("{}") );
+```
 
-### Jekyll Themes
+# Tokens
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/spql-lang/spql-lang.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- `{` : lb
+- `}` : rb
+- `(` : ls
+- `)` : rs
+- `[` : la
+- `]` : ra
+- `\s` : skip
+- `;` : end
+- `.` : fs
+- `,` : rz
+- `number([0-9]+)` : num
+- `"<string>"` : str
+- `'<string>'` : sts
+- /<regex>/ : rgx
+- `#<any>` : skip, single line comment
+- letters (`[A-Za-z0-9\_\$]+`) : nm
+- keyword (if else for while do func switch class break continue case default return try catch) : key
+- operator (+ - * / \= % & | ! ? : < > ~ @ ^ `) : pnc
 
-### Support or Contact
+----------
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For more details see [SPQL repository](https://github.com/spql-lang/spql).
